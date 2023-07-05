@@ -1,17 +1,19 @@
-import Navbar from '@/components/navbar/Navbar'
-import './globals.css'
-import { Inter, Poppins } from 'next/font/google'
-import { ThemeProvider } from './ThemeContext/ThemeProvider'
-import Footer from '@/components/footer/Footer'
+import Navbar from "@/components/navbar/Navbar";
+import "./globals.css";
+import { Inter, Poppins } from "next/font/google";
+import { ThemeProvider } from "./ThemeContext/ThemeProvider";
+import Footer from "@/components/footer/Footer";
 // import Footer from '@/components/footer/Footer'
 
-
-const Poppin = Poppins({ subsets: ['latin'], weight: ['300', '400', '600', '900'] })
+const Poppin = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "900"],
+});
 
 export const metadata = {
-  title: 'Next Blog',
-  description: 'Share your knowledge with the world',
-}
+  title: "BlogBuzz",
+  description: "Share your knowledge with the world",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -26,5 +28,5 @@ export default function RootLayout({ children }) {
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
