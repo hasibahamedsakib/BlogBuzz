@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar/Navbar'
 import './globals.css'
 import { Inter, Poppins } from 'next/font/google'
 import { ThemeProvider } from './ThemeContext/ThemeProvider'
+import Footer from '@/components/footer/Footer'
 // import Footer from '@/components/footer/Footer'
 
 
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
           <div className="container max-w-7xl min-h-screen my-0 mx-auto px-12 flex flex-col justify-between">
             <Navbar></Navbar>
             {children}
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
           </div>
         </ThemeProvider>
       </body>
